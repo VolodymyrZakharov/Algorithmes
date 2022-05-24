@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2021_12_06_pairwise_product_umittests/2021_12_06_pairwise_product_umittests.iml" filepath="$PROJECT_DIR$/2021_12_06_pairwise_product_umittests/2021_12_06_pairwise_product_umittests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021_12_07_Homework/2021_12_07_Homework.iml" filepath="$PROJECT_DIR$/2021_12_07_Homework/2021_12_07_Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021_12_14_Greedy_Algorithmes/2021_12_14_Greedy_Algorithmes.iml" filepath="$PROJECT_DIR$/2021_12_14_Greedy_Algorithmes/2021_12_14_Greedy_Algorithmes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2022_01_11_DevideAndConqure/2022_01_11_DevideAndConqure.iml" filepath="$PROJECT_DIR$/2022_01_11_DevideAndConqure/2022_01_11_DevideAndConqure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2022_01_24_hash_map_example/2022_01_24_hash_map_example.iml" filepath="$PROJECT_DIR$/2022_01_24_hash_map_example/2022_01_24_hash_map_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2022_01_24_homework/2022_01_24_homework.iml" filepath="$PROJECT_DIR$/2022_01_24_homework/2022_01_24_homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2022_01_25_Graf_Tree/2022_01_25_Graf_Tree.iml" filepath="$PROJECT_DIR$/2022_01_25_Graf_Tree/2022_01_25_Graf_Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Algorithmes.iml" filepath="$PROJECT_DIR$/.idea/Algorithmes.iml" />
+    </modules>
+  </component>
+</project>
