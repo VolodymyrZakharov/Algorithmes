@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
 //Медианный элемент списка элементов, это элемент, лежащий посередине, если список отсортировать. Или это арифметичское среднее двух срединных элементов, если их четное количество.
 //{5, 8, 2, 4, 3, 128} -> {2, 3, 4, 5, 8, 128} -> 4.5
 //(Использвать кучи: PriorityQueue)
-public class GetMedianConnection implements IGetMedianCollection {
+public class GetMedianCollection implements IGetMedianCollection {
     private PriorityQueue<Integer> leftQueue = new PriorityQueue<>(new leftQueueComparator());
     private PriorityQueue<Integer> rightQueue = new PriorityQueue<>();
 

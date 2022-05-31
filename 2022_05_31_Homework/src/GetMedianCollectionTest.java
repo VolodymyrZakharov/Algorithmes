@@ -6,7 +6,7 @@ class GetMedianCollectionTest {
 
     @Test
     public void test_1() {
-        GetMedianConnection collection = new GetMedianConnection();
+        GetMedianCollection collection = new GetMedianCollection();
         collection.add(5);
         collection.add(8);
         collection.add(2);
@@ -19,7 +19,7 @@ class GetMedianCollectionTest {
 
     @Test
     public void test_2() {
-        GetMedianConnection collection = new GetMedianConnection();
+        GetMedianCollection collection = new GetMedianCollection();
         collection.add(5);
         collection.add(8);
         collection.add(2);
@@ -31,7 +31,7 @@ class GetMedianCollectionTest {
 
     @Test
     public void test_3() {
-        GetMedianConnection collection = new GetMedianConnection();
+        GetMedianCollection collection = new GetMedianCollection();
         collection.add(-4);
         collection.add(3);
         collection.add(8);
@@ -43,7 +43,7 @@ class GetMedianCollectionTest {
 
     @Test
     public void test_4() {
-        GetMedianConnection collection = new GetMedianConnection();
+        GetMedianCollection collection = new GetMedianCollection();
         collection.add(0);
         collection.add(3);
         collection.add(8);
