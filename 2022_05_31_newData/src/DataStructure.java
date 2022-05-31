@@ -20,10 +20,10 @@ public class DataStructure implements ICollection {
             return false;
         } else {
             long listLastValue = randomList.get(randomList.size() - 1);
-            int listLastValueIndex = map.get(value);
+            int listLastValueNewIndex = map.get(value);
 
-            map.put(listLastValue, listLastValueIndex);
-            randomList.set(listLastValueIndex, listLastValue);
+            map.put(listLastValue, listLastValueNewIndex);
+            randomList.set(listLastValueNewIndex, listLastValue);
             randomList.remove(randomList.size() - 1);
             map.remove(value);
         }
