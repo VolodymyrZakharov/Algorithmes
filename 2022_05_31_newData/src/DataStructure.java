@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class DataStructure implements ICollection {
-    private Map<Long, Integer> map = new HashMap<>();
-    private List<Long> randomList = new ArrayList<>();
+public class DataStructure<T> implements ICollection<T> {
+    private Map<T, Integer> map = new HashMap<>();
+    private List<T> randomList = new ArrayList<>();
 
     @Override
-    public boolean add(long value) {
+    public boolean add(T value) {
         if (map.containsKey(value)) {
             return false;
         } else
@@ -15,15 +15,15 @@ public class DataStructure implements ICollection {
     }
 
     @Override
-    public boolean remove(long value) {
+    public boolean remove(T value) {
         if (!map.containsKey(value)) {
             return false;
         } else {
-            long listLastValue = randomList.get(randomList.size() - 1);
-            int listLastValueNewIndex = map.get(value);
+            T listLastValue = randomList.get(randomList.size() - 1);
+            int listValueIndex = map.get(value);
 
-            map.put(listLastValue, listLastValueNewIndex);
-            randomList.set(listLastValueNewIndex, listLastValue);
+            map.put(listLastValue, listValueIndex);
+            randomList.set(listValueIndex, listLastValue);
             randomList.remove(randomList.size() - 1);
             map.remove(value);
         }
@@ -31,16 +31,16 @@ public class DataStructure implements ICollection {
     }
 
     @Override
-    public long getRandom() {
+    public T getRandom() {
         if (randomList.size() == 0) throw new NoSuchElementException();
         return randomList.get(new Random().nextInt(randomList.size()));
     }
 
-    public List<Long> getRandomList() {
+    public List<T> getRandomList() {
         return randomList;
     }
 
-    public Map<Long, Integer> getMap() {
+    public Map<T, Integer> getMap() {
         return map;
     }
 }
