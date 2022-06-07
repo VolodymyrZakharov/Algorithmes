@@ -7,7 +7,7 @@ public interface IGetMedianCollection {
      *
      * @param value
      */
-    public void add(int number);
+    public void add(int value);
 
     /**
      * The method return the median element of the collection.

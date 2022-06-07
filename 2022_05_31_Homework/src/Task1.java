@@ -9,7 +9,7 @@ public class Task1 {
     //128. Каунтер = 0. Если 128 не делится на 2, то мы добавляем к каунтеру 1.
     // После чего делим 128 на 2 и повторяем таким образом, пока число > 0.
 
-    public static void sort(List<Integer> list) {
+    public void sort(List<Integer> list) {
         Comparator comparator = new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
@@ -23,14 +23,22 @@ public class Task1 {
         list.sort(comparator);
     }
 
-    public static Integer getCounter(Integer value) {
+    public void sort2(List<Integer> list) {
+        list.sort(Comparator.comparing(this::getCounter).thenComparing(Integer::compare));
+    }
+
+    public Integer getCounter(Integer value) {
         int counter = 0;
         while (value > 0) {
             if (value % 2 != 0) {
                 counter++;
             }
-            value /= 2;
+            value = value >> 2;
         }
         return counter;
+    }
+
+    public Integer getCounter2(Integer value) {
+        return Integer.toBinaryString(value).replace("0", "").length();
     }
 }
